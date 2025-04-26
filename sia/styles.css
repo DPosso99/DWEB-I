@@ -65,31 +65,34 @@
   /* Avance Section */
   .avance {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    padding: 2rem;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+    padding: 10px;
     justify-items: center;
   }
   
   .avance__card {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
     
     /* ✨ Animación al cargar */
-    animation: aparecer 2s ease forwards;
+    animation: aparecer 0.5s ease forwards;
+    animation: cursor 1s ease forwards;
   }
+
+
   
   /* Efecto al hacer hover */
   .avance__card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Detener la animación al hacer hover */
   }
   
   .avance__title {
-    background-color: #4a90e2;
+    background-color: #6be24a;
     color: white;
     font-size: 1.2rem;
     padding: 1rem;
@@ -108,15 +111,16 @@
       opacity: 0;
     }
     to {
-      transform: scale(1);
+      transform: scale(0.9);
       opacity: 1;
     }
   }
+
   
   
   /* FOOTER */
   footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 1rem;
