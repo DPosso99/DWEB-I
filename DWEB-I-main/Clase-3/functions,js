@@ -1,0 +1,34 @@
+function rollDice() {
+    return Math.floor(Math.random() * 6) + 1;
+
+}
+console.log(rollDice());
+
+
+
+function greet(name, msg){
+    console.log("Hello ${name}, ${msg});")
+}
+
+greet("Carlos", "welcome!")
+
+//Scope
+
+bankRobbery();
+
+function bankRobbery(){
+    const herores = ["Batman", "Profesor supero O", "rey Misterio"]
+    return function auxilio(){
+        for (let i = 0; i < herores.length; i++){
+            console.log("SALVAME $herores[i]");
+        }
+    }
+}
+
+//Function expression
+
+square = function (x){
+    return x ** 2;
+}
+
+
